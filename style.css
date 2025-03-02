@@ -37,6 +37,8 @@ body {
     border-radius: 12px;
     width: 327px;
     padding: 24px;
+    transition: padding 0.15s ease-in;
+    transition: width 0.3s ease-in;
 }
 
 .card--header {
@@ -81,13 +83,37 @@ li {
     line-height: 45px;
     font-weight: 600;
     cursor: url("./assets/images/handcursor.svg"), pointer;
-    transition: background-color 1s;
+    transition: background-color 1500ms 150ms;
+    transition: color 1.5s;
 }
 
-.link:hover {
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    transition: background-color inherit;
+}
+
+.link {
+    background-color: var(--grey-700);
+    color: var(--white);
+    transition: background-color 750ms cubic-bezier(.19,1.05,.84,.93);
+    transition: color 1s;
+}
+
+.link:hover, a:hover, .link:focus, a:focus, li:focus {
     background-color: var(--green);
     color: var(--grey-900);
-    transition: background-color 1s;
-    transition-timing-function: linear;
-    /* transition-duration: 200ms; */
+    transition: background-color 750ms cubic-bezier(.19,1.05,.84,.93);
+    transition: color 1s;
+}
+
+@media (min-width: 600px) {
+    .card--body {
+        width: 384px;
+        padding: 40px;
+        transition: padding 0.15s ease-in;
+        transition: width 0.3s ease-in;
+        
+    }
 }
