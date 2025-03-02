@@ -108,6 +108,10 @@ a {
     transition: color 1s;
 }
 
+footer {
+    justify-content: center;
+}
+
 @media (min-width: 600px) {
     .card--body {
         width: 384px;
@@ -117,3 +121,4 @@ a {
         
     }
 }
+
