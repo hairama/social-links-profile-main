@@ -69,7 +69,6 @@ h1 {
 }
 
 ul {
-   
     width: 100%;
 }
 
@@ -85,6 +84,10 @@ li {
     cursor: url("./assets/images/handcursor.svg"), pointer;
     transition: background-color 1500ms 150ms;
     transition: color 1.5s;
+}
+
+li:last-child {
+    margin-bottom: 0;
 }
 
 a {
